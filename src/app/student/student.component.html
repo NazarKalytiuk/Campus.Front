@@ -1,0 +1,18 @@
+<div class="profile-container" (click)="onClick()">
+  <div class="profile-header">
+    <div class="profile-header__background"></div>
+    <div class="profile-header__info">
+      <img class="profile-header__info-image" src="assets/account2.jpg" alt="">
+      <div class="profile-header__info-text">
+        <div class="info__name">
+          <span class="name"> {{ user?.Name }} {{user?.Surname}} </span>
+          <span class="desc">Student</span>
+        </div>
+        <div class="info__group">
+          <a class="name" routerLink="/group/{{group?.Id}}"> {{ group?.Name }} </a>
+          <span class="desc">Group</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

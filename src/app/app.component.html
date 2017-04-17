@@ -1,0 +1,10 @@
+<app-navbar [leftsidenav]="leftsidenav"></app-navbar>
+<md-sidenav-container>
+	<md-sidenav #leftsidenav align="start" mode="side">
+		<app-sidenav></app-sidenav>
+	</md-sidenav>
+			<app-preloader></app-preloader>
+	<router-outlet>
+	</router-outlet>
+	<app-footer></app-footer>
+</md-sidenav-container>

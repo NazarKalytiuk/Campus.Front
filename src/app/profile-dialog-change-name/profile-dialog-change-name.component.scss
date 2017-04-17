@@ -1,0 +1,25 @@
+:host {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+h3 {
+    width: 100%;
+    padding: 0 0 28px 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & button {
+        margin: 0;
+    }
+}
+md-input-container {
+    width: 100%;
+}
+button {
+    align-self: flex-end;
+    margin: 24px 0 0 0;
+    text-transform: uppercase;
+}

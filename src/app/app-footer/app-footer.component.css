@@ -1,0 +1,11 @@
+:host {
+    display: flex;
+    width: 100%;
+    background: #00bcd4;
+    color: white;
+    margin-top: 40px;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    align-self: flex-end;
+}

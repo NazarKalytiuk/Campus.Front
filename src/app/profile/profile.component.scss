@@ -1,0 +1,64 @@
+@import "../_shadows.scss";
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 100%;
+    & h2 {
+        font-family: 'Roboto';
+        font-weight: 400;
+        width: 100%;
+        font-size: 36px;
+        padding: 15px 0;
+        line-height: 42px
+    }
+}
+
+.personal-data {
+    box-shadow: $shadow4;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+md-list {
+    width: 600px;
+    & md-list-item {
+        height: 4rem;
+        display: flex;
+        box-sizing: border-box;
+        align-content: center;
+        align-items: center;
+        & .title {
+            display: flex;
+            width: 45%;
+            color: #181818;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        & .desc {
+            display: flex;
+            width: 45%;
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: normal;
+        }
+        & [md-icon-button] {
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 24px;
+            line-height: 24px;
+            &[disabled] {
+                & md-icon {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+.mat-list-item-content {
+    display: flex;
+    box-sizing: border-box;
+    color: red;
+}

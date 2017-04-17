@@ -1,0 +1,25 @@
+<div class="profile-container">
+  <div class="profile-header">
+    <div class="profile-header__background"></div>
+    <div class="profile-header__info">
+      <img class="profile-header__info-image" src="assets/account2.jpg" alt="">
+      <div class="profile-header__info-text">
+        <div class="info__name">
+          <span class="name"> {{ group?.Name }} </span>
+          <span class="desc">Група</span>
+        </div>
+        <div class="info__group">
+          <a class="name" routerLink="/profile/student/{{monitor?.Id}}"> {{ monitor?.Name }} {{ monitor?.Surname }} </a>
+          <span class="desc">Староста</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <md-card *ngIf="students">
+    <md-card-title>Студенти</md-card-title>
+    <md-list *ngFor="let item of students">
+      <a md-list-item routerLink="/profile/student/{{item?.Id}}"> {{ item?.Name }} {{ item?.Surname }}</a>
+    </md-list>
+  </md-card>
+
+</div>
